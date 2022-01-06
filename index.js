@@ -17,6 +17,13 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+document.addEventListener("click", (e) => {
+  if (e.key === " ") {
+    dino.classList.add("jump");
+    setTimeout(removeClass, 500);
+  }
+});
+
 setInterval(checkIfDead, 1);
 
 function checkIfDead() {
